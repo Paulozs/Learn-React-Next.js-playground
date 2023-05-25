@@ -16,16 +16,18 @@ const MyApp: AppType<{ session: Session | null }> = ({
     <SessionProvider session={session}>
       <Head>
         <title>Twitter Clone</title>
-        <meta name='description' content="This is a simplified Twitter clone by Paul Ong"/>
+        <meta
+          name="description"
+          content="This is a simplified Twitter clone by Paul Ong"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="container mx-auto flex items-start">
-      <SideNav/>
+        <SideNav />
         <div className="min-h-screen flex-grow border-x">
           <Component {...pageProps} />
         </div>
       </div>
-      
     </SessionProvider>
   );
 };
